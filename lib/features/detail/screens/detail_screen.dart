@@ -31,7 +31,7 @@ class _DetailScreenState extends State<DetailScreen> {
   Future<void> _initTts() async {
     await flutterTts.setLanguage("en-US");
     await flutterTts.setPitch(1.0);
-    await flutterTts.setSpeechRate(1);
+    await flutterTts.setSpeechRate(0.5);
 
     flutterTts.setCompletionHandler(() {
       if (mounted) {
